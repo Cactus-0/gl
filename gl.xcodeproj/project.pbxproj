@@ -15,7 +15,6 @@
 		E6542147299BAD1D00E0C65E /* Clipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6542146299BAD1D00E0C65E /* Clipboard.swift */; };
 		E6542149299BB88900E0C65E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6542148299BB88900E0C65E /* Event.swift */; };
 		E6B725162A0EA19E00D8433A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6B725182A0EA19E00D8433A /* Localizable.strings */; };
-		E6C828C129B34B5E008B7D5F /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = E6C828C029B34B5E008B7D5F /* HotKey */; };
 		E6CC55E029AE530E00D9611B /* Copyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC55DF29AE530E00D9611B /* Copyable.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C828C129B34B5E008B7D5F /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +128,6 @@
 			);
 			name = gl;
 			packageProductDependencies = (
-				E6C828C029B34B5E008B7D5F /* HotKey */,
 			);
 			productName = gl;
 			productReference = E61E35A42999330D00E28CEA /* gl.app */;
@@ -162,7 +159,6 @@
 			);
 			mainGroup = E61E359B2999330D00E28CEA;
 			packageReferences = (
-				E6C828BF29B34B5E008B7D5F /* XCRemoteSwiftPackageReference "HotKey" */,
 			);
 			productRefGroup = E61E35A52999330D00E28CEA /* Products */;
 			projectDirPath = "";
@@ -432,25 +428,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E6C828BF29B34B5E008B7D5F /* XCRemoteSwiftPackageReference "HotKey" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/soffes/HotKey";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E6C828C029B34B5E008B7D5F /* HotKey */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E6C828BF29B34B5E008B7D5F /* XCRemoteSwiftPackageReference "HotKey" */;
-			productName = HotKey;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E61E359C2999330D00E28CEA /* Project object */;
 }
