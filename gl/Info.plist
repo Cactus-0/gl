@@ -4,7 +4,5 @@
 <dict>
 	<key>NSUserActivityTypes</key>
 	<array/>
-	<key>LSUIElement</key>
-	<true/>
 </dict>
 </plist>

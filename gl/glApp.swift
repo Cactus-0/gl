@@ -1,5 +1,4 @@
 import SwiftUI
-import HotKey
 
 @main
 struct glApp: App {
