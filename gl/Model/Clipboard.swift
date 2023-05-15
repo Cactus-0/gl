@@ -3,7 +3,7 @@ import Cocoa
 import SwiftUI
 
 class Clipboard: Event<CopyableData>, ObservableObject {
-    public static let maxJournalLength: Int = 15
+    private let maxJournalLength: Int
     
     private let pasteboard = NSPasteboard.general
     
@@ -12,7 +12,9 @@ class Clipboard: Event<CopyableData>, ObservableObject {
     
     private var changeCount: Int
     
-    override init() {
+    init(maxJournalLength: Int) {
+        self.maxJournalLength = maxJournalLength
+        
         changeCount = pasteboard.changeCount
         
         super.init()
@@ -50,7 +52,7 @@ class Clipboard: Event<CopyableData>, ObservableObject {
             let img = CopyableData.image(NSImage(data: data)!)
             journal.append(img)
             
-            if journal.count > Clipboard.maxJournalLength {
+            if journal.count > maxJournalLength {
                 journal.remove(at: 0)
             }
             
@@ -62,7 +64,7 @@ class Clipboard: Event<CopyableData>, ObservableObject {
         
         journal.append(.string(string))
         
-        if journal.count > Clipboard.maxJournalLength {
+        if journal.count > maxJournalLength {
             journal.remove(at: 0)
         }
         

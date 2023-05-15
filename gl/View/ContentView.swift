@@ -48,6 +48,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(clipboard: Clipboard(), afterSelect: { _ in () })
+        ContentView(clipboard: Clipboard(maxJournalLength: 15), afterSelect: { _ in () })
     }
 }

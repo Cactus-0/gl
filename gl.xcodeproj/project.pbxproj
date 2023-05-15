@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E608052B2A0F7E1900160530 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E608052A2A0F7E1900160530 /* SettingsView.swift */; };
 		E61E35A82999330D00E28CEA /* glApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E35A72999330D00E28CEA /* glApp.swift */; };
 		E61E35AA2999330D00E28CEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61E35A92999330D00E28CEA /* ContentView.swift */; };
 		E61E35AC2999330F00E28CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61E35AB2999330F00E28CEA /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E608052A2A0F7E1900160530 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E61E35A42999330D00E28CEA /* gl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61E35A72999330D00E28CEA /* glApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glApp.swift; sourceTree = "<group>"; };
 		E61E35A92999330D00E28CEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				E61E35A92999330D00E28CEA /* ContentView.swift */,
 				E6CC55DF29AE530E00D9611B /* Copyable.swift */,
+				E608052A2A0F7E1900160530 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E608052B2A0F7E1900160530 /* SettingsView.swift in Sources */,
 				E61E35AA2999330D00E28CEA /* ContentView.swift in Sources */,
 				E61E35A82999330D00E28CEA /* glApp.swift in Sources */,
 				E6542149299BB88900E0C65E /* Event.swift in Sources */,
@@ -333,7 +337,7 @@
 				CODE_SIGN_ENTITLEMENTS = gl/gl.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"gl/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -356,7 +360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cactus-0.gl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -377,7 +381,7 @@
 				CODE_SIGN_ENTITLEMENTS = gl/gl.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"gl/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -400,7 +404,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cactus-0.gl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

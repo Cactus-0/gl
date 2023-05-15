@@ -4,7 +4,10 @@ import SwiftUI
 struct glApp: App {
     @Environment(\.openWindow) var openWindow
     
-    private let clipboard = Clipboard()
+    private let clipboard = Clipboard(
+        maxJournalLength: UserDefaults.standard.integer(forKey: "maxJournalLength")
+    )
+    
     public static let menuWindowId = NSUserInterfaceItemIdentifier("menu")
     private let title = LocalizedStringKey("Title")
     
@@ -28,7 +31,10 @@ struct glApp: App {
     
     var body: some Scene {
         MenuBarExtra(title, systemImage: "list.clipboard.fill") {
-            Button(LocalizedStringKey("Open menu"), action: open).keyboardShortcut("v", modifiers: [.control]);
+            Button(LocalizedStringKey("Open menu"), action: open).keyboardShortcut("v", modifiers: [.control])
+            
+            Button(LocalizedStringKey("Options"), action: { openWindow(id: "options") })
+                .keyboardShortcut(",", modifiers: [.command])
         }
         
         Window(title, id: glApp.menuWindowId.rawValue) {
@@ -43,5 +49,10 @@ struct glApp: App {
             }
         }
         .windowResizability(.contentSize)
+        
+        Window(LocalizedStringKey("Options"), id: "options") {
+            SettingsView()
+                .frame(minWidth: 300, minHeight: 200)
+        }
     }
 }
